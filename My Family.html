@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Life Lately</title>
+
+  <style>
+    :root{
+      --bg: #0f1724;
+      --muted: #b6c2cf;
+      --glass: rgba(255,255,255,0.06);
+      --radius: 12px;
+      --gap: 1.25rem;
+      --ff: system-ui, -apple-system, 'Segoe UI', Roboto;
+    }
+
+    body{
+      margin:0;
+      font-family:var(--ff);
+      background: linear-gradient(180deg, var(--bg) 0%, #071025 100%);
+      color:white;
+      text-align:center;
+      padding:2rem;
+    }
+
+    h1,{
+      margin-top:2rem;
+      margin-bottom:1rem;
+      color:var(--muted);
+      letter-spacing:1px;
+    }
+
+    .section{
+      background:var(--glass);
+      padding:1.5rem;
+      margin:auto;
+      max-width:1000px;
+      border-radius:var(--radius);
+      margin-bottom:2rem;
+    }
+
+    .gallery{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:var(--gap);
+    }
+
+    .gallery img{
+      border-radius:var(--radius);
+      transition:0.3s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 12px rgba(255,255,255,0.3);
+      cursor:pointer;
+    }
+  </style>
+
+<body>
+
+<h1><b> MY FAMILY </b></h1>
+<p> This is my family. My family has always been my source of inspiration whenever I feel down or <br>
+not feeling right. they are always there for me, even when I get too rebelious and when I try new things <br>
+they are always there to support me. I love them from the bottom of my heart and I am beyond grateful for having <br>
+such a wonderful family. </p>
+<div class="section gallery">
+  <img src="My family.jpg" width="500">
+
+</div>

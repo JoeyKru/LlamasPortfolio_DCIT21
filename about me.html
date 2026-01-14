@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Myself</title>
+
+<style>
+:root {
+  --bg: #0f1724;
+  --muted: #9aa4b2;
+  --glass: rgba(255,255,255,0.04);
+  --radius: 12px;
+  --ff: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--ff);
+  background: linear-gradient(180deg, var(--bg) 0%, #071025 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  background: var(--glass);
+  padding: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.images {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.images img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+/* ✅ Back Button */
+.back-link {
+  background: var(--glass);
+  padding: .75rem 1.25rem;
+  border-radius: var(--radius);
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  background: rgba(255,255,255,0.12);
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ABOUT MYSELF</h1>
+
+  <p>
+    Hello, I’m Joey but you can call me Jo or Wi, whichever you prefer. I was born and raised in
+    Habay 1, Bacoor City, Cavite, and living here has been a roller coaster of happiness and
+    challenges. Some of my hobbies include watching shows, playing sports and online games, and
+    reading. Since elementary, I’ve always enjoyed exploring new things and discovering different
+    experiences. What makes me sad is when I miss my family or when I can’t do the things I love.
+    A fun fact about me is that I may look a bit grumpy at first, but once you get to know me,
+    you’ll see my caring and playful side. I’m currently studying BS Computer Science at CVSU.
+    So far, the journey has been tiring but also fun and exciting. In the future, I see myself as a
+    successful man, able to provide for my own needs while also giving back to my parents and
+    siblings — even spoiling them a little.
+  </p>
+
+
+
+  <div class="images">
+    <img src="joey.png" alt="My Photo">
+    <img src="joey2.png" alt="My Photo">
+    <img src="joey3.png" alt="My Photo">
+  </div>
+
+</div>
+
+</body>
+</html>

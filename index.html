@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home — Example Page</title>
+  <style>
+    :root{
+      --bg: #0f1724;
+      --muted: #9aa4b2;
+      --accent: #4f46e5;
+      --glass: rgba(255,255,255,0.03);
+      --radius: 12px;
+      --gap: 1.25rem;
+      --max-width: 1100px;
+      --ff: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--ff);
+      background: linear-gradient(180deg, var(--bg) 0%, #071025 100%);
+      color:white;
+      padding:2rem;
+      display:flex;
+      justify-content:center;
+    }
+
+    .page{
+      width:100%;
+      max-width:var(--max-width);
+      display:flex;
+      flex-direction:column;
+      gap:2rem;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:.75rem;
+    }
+
+    .home-icon{
+      width:42px;height:42px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, rgba(255,255,255,0.04), var(--glass));
+      border-radius:10px;
+      padding:6px;
+    }
+
+    .home-icon svg{width:28px;height:28px}
+
+    .brand h1{margin:0}
+    .brand p{margin:0;font-size:.85rem;color:var(--muted)}
+
+    /*  Make Hero Clickable Style */
+    .hero-link{
+      text-decoration:none;
+      color:inherit;
+      display:block;
+    }
+
+    .hero{
+      background:var(--glass);
+      padding:2rem;
+      border-radius:var(--radius);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:2rem;
+      transition:0.3s;
+    }
+    .hero:hover{
+      background:rgba(255,255,255,0.08);
+      cursor:pointer;
+    }
+
+    .hero-left{max-width:60%}
+    .hero h2{margin:0 0 .5rem 0}
+    .hero p{color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+    .card{
+      background:var(--glass);
+      padding:1rem;border-radius:var(--radius);
+      transition:0.3s;
+    }
+    .card:hover{
+      background:rgba(255,255,255,0.08);
+      cursor:pointer;
+    }
+    .card h3{margin:0}
+
+    footer{color:var(--muted);text-align:center;margin-top:1rem}
+    @media(max-width:900px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:560px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<main class="page">
+
+<header>
+  <div class="brand">
+    <div class="home-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+        <path d="M3 10.5L12 4l9 6.5"/>
+        <path d="M7 21V12h10v9"/>
+      </svg>
+    </div>
+    <div>
+      <h1>My Portfolio</h1>
+      <p>Welcome To My First Website</p>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT ME CLICKABLE -->
+<a href="about me.html" class="hero-link">
+<section class="hero">
+  <div class="hero-left">
+    <h2>ABOUT ME</h2>
+    <p>My personal life and things I experience.</p>
+  </div>
+  <div class="hero-illustration" style="width:120px;height:120px;text-align:center;font-size:4rem;">👾</div>
+</section>
+</a>
+
+<section class="grid">
+
+  <!-- Clickable Vision Mission Quality Policy Card -->
+  <a href="Vision Mission Qualty Policy.html" style="text-decoration:none; color:inherit;">
+  <div class="card">
+    <h3>Vision Mission Quality Policy</h3>
+  </div>
+  </a>
+
+  <!--  Clickable List Card -->
+  <a href="list.html" style="text-decoration:none; color:inherit;">
+    <div class="card">
+      <h3>List</h3>
+    </div>
+  </a>
+
+  <!-- Clickable My Resume Card -->
+  <a href="My Resume.html" style="text-decoration:none; color:inherit;">
+    <div class="card">
+      <h3>My Resume</h3>
+    </div>
+  </a>
+
+  <!-- Clickable My Pictures Card -->
+  <a href="My Pictures.html" style="text-decoration:none; color:inherit;">
+    <div class="card">
+      <h3>My Pictures</h3>
+    </div>
+  </a>
+
+  <!--  Clickable My Family Card -->
+  <a href="My Family.html" style="text-decoration:none; color:inherit;">
+    <div class="card">
+      <h3>My Family</h3>
+    </div>
+  </a>
+
+</section>
+<footer>By Llamas, Joey M. BSCS 1-A </footer>
+
+</main>
+
+</body>
+</html>
